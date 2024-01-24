@@ -27,6 +27,10 @@ html {
 }
 button {
     background-color: #D98541;
+    
+}
+button:hover{
+    background-color: white;
 }
 #seven {
     grid-column: f/s;
