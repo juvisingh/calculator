@@ -1,6 +1,10 @@
 html {
     background-color: #e4e5dd;
 }
+@font-face {
+    font-family: myFont;
+    src: url(./Peach\ Cake.otf);
+}
 .calc {
     border-radius: 25px;
     background: #a8ae95;
@@ -9,14 +13,22 @@ html {
     height: 600px;
 }
 .display {
+    display: grid;
+    width: 400px;
+    height: 100px;
+    grid-template-columns: [a] auto [end];
+    grid-template-rows: [b] auto [end];
+}
+#disGrid {
+    grid-row: a/end;
+    grid-column: b/end;
+}
+#dis {
     width: 400px;
     height: 100px;
     background-color: black;
-    color: white;
-    text-align: center;
     border-radius: 25px;
-    font-size: 80px;
-
+    resize: none;
 }
 .buttons {
     display: grid;
