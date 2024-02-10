@@ -5,6 +5,11 @@ html {
     font-family: myFont;
     src: url(./Peach\ Cake.otf);
 }
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
 .calc {
     border-radius: 25px;
     background: #a8ae95;
@@ -15,9 +20,14 @@ html {
 .display {
     display: grid;
     width: 400px;
-    height: 100px;
+    height: 150px;
     grid-template-columns: [a] auto [end];
     grid-template-rows: [b] auto [end];
+    background-color: black; 
+    border-radius: 25px; 
+    resize: none; 
+    color: white;
+    font-size: max(50px);
 }
 #disGrid {
     grid-row: a/end;
@@ -144,3 +154,4 @@ button.equal:hover {
     height: 100px;
     font-size: 25px;
 }
+

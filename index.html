@@ -13,27 +13,28 @@
     <center>
         <div class="calc">
             <div class="display">
-                <input type="text" id="display" name="display" class="disGrid" style="background-color: black; border-radius: 25px; resize: none; color: white;">
+                <h2 style="font-size: 50px; overflow-x: scroll; display: flex; flex-direction: row; overflow-y: hidden;" id="result"></h2>
             </div>
             <div class="buttons">
-                <button id="seven">7</button>
-                <button id="eight">8</button>
-                <button id="nine">9</button>
-                <button id="divide">÷</button>
-                <button id="four">4</button>
-                <button id="five">5</button>
-                <button id="six">6</button>
-                <button id="multiply">x</button>
-                <button id="one">1</button>
-                <button id="two">2</button>
-                <button id="three">3</button>
-                <button id="minus">-</button>
-                <button id="zero">0</button>
-                <button id="decimal">.</button>
-                <button class="equal">=</button>
-                <button id="plus">+</button>
+                <button id="seven" onclick="changeString(7)">7</button>
+                <button id="eight" onclick="changeString(8)">8</button>
+                <button id="nine" onclick="changeString(9)">9</button>
+                <button id="divide" onclick="changeString(' / ')">÷</button>
+                <button id="four" onclick="changeString(4)">4</button>
+                <button id="five" onclick="changeString(5)">5</button>
+                <button id="six" onclick="changeString(6)">6</button>
+                <button id="multiply" onclick="changeString(' * ')">x</button>
+                <button id="one" onclick="changeString(1)">1</button>
+                <button id="two" onclick="changeString(2)">2</button>
+                <button id="three" onclick="changeString(3)">3</button>
+                <button id="minus" onclick="changeString(' - ')">-</button>
+                <button id="zero" onclick="changeString(0)">0</button>
+                <button id="decimal" onclick="changeString('.')">.</button>
+                <button class="equal" onclick="changeString('equal')">=</button>
+                <button id="plus" onclick="changeString(' + ')">+</button>
             </div>
         </div>
     </center>
+    <script src="app.js"></script>
 </body>
 </html>
