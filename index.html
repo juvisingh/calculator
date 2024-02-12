@@ -13,7 +13,8 @@
     <center>
         <div class="calc">
             <div class="display">
-                <h2 style="font-size: 50px; overflow-x: scroll; display: flex; flex-direction: row; overflow-y: hidden;" id="result"></h2>
+                <!-- overflow-x: scroll; display: flex; flex-direction: row; overflow-y: hidden; -->
+                <h2 style="font-size: 30px;" id="result"></h2>
             </div>
             <div class="buttons">
                 <button id="seven" onclick="changeString(7)">7</button>
@@ -32,6 +33,15 @@
                 <button id="decimal" onclick="changeString('.')">.</button>
                 <button class="equal" onclick="changeString('equal')">=</button>
                 <button id="plus" onclick="changeString(' + ')">+</button>
+                <button id="expon" onclick="changeString('**')">^</button>
+                <button id="sqrt" onclick="changeString('Math.sqrt')">√</button>
+                <button id="e" onclick="changeString('e')">e</button>
+                <button id="log" onclick="changeString('log')">log</button>
+                <button id="sin" onclick="changeString('sin')">sin</button>
+                <button id="cos" onclick="changeString('cos')">cos</button>
+                <button id="tan" onclick="changeString('tan')">tan</button>
+                <button id="bs" onclick="changeString('BS')">BS</button>
+                <button id="ac" onclick="changeString('AC')">AC</button>
             </div>
         </div>
     </center>
