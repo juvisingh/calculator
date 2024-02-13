@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Juvi Singh">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <center>
+        <!-- title of the page and its according css -->
         <h1 style="color: #453034; font-family: myFont;">Calculator</h1>
     </center>
     <center>
         <div class="calc">
+            <!-- the black display of the calculator -->
             <div class="display">
+                <!-- the text area of the display which can be altered  -->
                 <h2 style="font-size: 30px;" id="result"></h2>
             </div>
+            <!-- div with all the buttons for the calculator as well as the js that runs when the button clicks -->
             <div class="buttons">
                 <button id="seven" onclick="changeString(7)">7</button>
                 <button id="eight" onclick="changeString(8)">8</button>
@@ -44,6 +49,7 @@
             </div>
         </div>
     </center>
+    <!-- import of the js to connect it to the HTML and have functions like changeString() work -->
     <script src="app.js"></script>
 </body>
 </html>
