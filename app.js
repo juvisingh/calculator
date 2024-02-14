@@ -67,7 +67,7 @@ function changeString(num, complicated = false) {
             //checks if the user clicked the base-10 logarithm button
             else if (num == 'log') {
                 //runs the log with base 10 function (from the built-in Math module) and stores the answer into the global variable eq.
-                eq = eval(Math.log(eq, 10))
+                eq = eval(Math.log10(eq))
                 //updates the display with the current value of eq (aka the answer in this case)
                 document.getElementById('result').innerHTML = eq
             }
