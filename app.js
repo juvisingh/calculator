@@ -95,4 +95,82 @@ function changeString(num, complicated = false) {
         eq = ''
     }
 }
-
+function keyboard(event) {
+    //The following comments are univeral for all cases of the keyboard function
+    //event.key gets the value of the key that was pressed on the keyboard
+    //event.preventDefault prevents the default function of the key
+    if (event.key === "1") {
+        event.preventDefault();
+        changeString(1)
+    }
+    else if (event.key === "0") {
+        event.preventDefault();
+        changeString(0)
+    }
+    else if (event.key === "2") {
+        event.preventDefault();
+        changeString(2)
+    }
+    else if (event.key === "3") {
+        event.preventDefault();
+        changeString(3)
+    }
+    else if (event.key === "4") {
+        event.preventDefault();
+        changeString(4)
+    }
+    else if (event.key === "5") {
+        event.preventDefault();
+        changeString(5)
+    }
+    else if (event.key === "6") {
+        event.preventDefault();
+        changeString(6)
+    }
+    else if (event.key === "7") {
+        event.preventDefault();
+        changeString(7)
+    }
+    else if (event.key === "8") {
+        event.preventDefault();
+        changeString(8)
+    }
+    else if (event.key === "9") {
+        event.preventDefault();
+        changeString(9)
+    }
+    else if (event.key === "+") {
+        event.preventDefault();
+        changeString(" + ")
+    }
+    else if (event.key === "-") {
+        event.preventDefault();
+        changeString(" - ")
+    }
+    else if (event.key === "/") {
+        event.preventDefault();
+        changeString(" / ")
+    }
+    else if (event.key === "*" || event.key === "x") {
+        event.preventDefault();
+        changeString(" * ")
+    }
+    else if (event.key === "^") {
+        event.preventDefault();
+        changeString("**")
+    }
+    else if (event.key === ".") {
+        event.preventDefault();
+        changeString(".")
+    }
+    else if (event.key === "Enter") {
+        event.preventDefault();
+        changeString("equal")
+    }
+    else if (event.key === "Backspace" || event.key === 'Delete') {
+        event.preventDefault();
+        changeString("BS")
+    }
+}
+//checks and when the a key is pressed down, the function keyboard is ran.
+document.addEventListener("keydown", keyboard);
