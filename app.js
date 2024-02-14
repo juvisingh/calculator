@@ -163,7 +163,7 @@ function keyboard(event) {
         event.preventDefault();
         changeString(".")
     }
-    else if (event.key === "Enter") {
+    else if (event.key === "Enter" || event.key === '=') {
         event.preventDefault();
         changeString("equal")
     }
